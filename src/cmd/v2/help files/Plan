@@ -1,0 +1,29 @@
+Cmd
+{
+    Does basic checkings
+    Loads preference files (if any)
+    Loads and creates internal state (if any)
+    Manages shell activities
+}
+    InternalState
+    {
+    	Singleton class
+    	Manager internal properties
+    	Can be saved in a file as serialized data
+    }
+	Shell
+	{
+	    Interprets commands
+	    Calls other commands and supplies with arguments
+	    Takes output and displays in console
+	    Receives commands from user
+	}
+		Utilities...
+		{
+		    Other utilty commands
+		}
+
+		
+Persistent Storage Files: (all optional)
+	Preferences (format: text)
+	InternalState (format: binary (serialized data))
